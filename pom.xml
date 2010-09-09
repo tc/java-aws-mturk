@@ -17,6 +17,17 @@
 	<developerConnection>scm:git:git@github.com:tc/java-aws-mturk.git</developerConnection>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <url>http://github.com/tc/tc-maven-repo/raw/master/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <url>http://github.com/tc/tc-maven-repo/raw/master/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>maven.org</id>
@@ -241,7 +252,7 @@
                   <optimize>true</optimize>
               </configuration>
           </plugin>
-            
+
             <plugin>
               <artifactId>maven-antrun-plugin</artifactId>
               <version>1.4</version>
