@@ -24,6 +24,9 @@ public class Comparator implements java.io.Serializable {
     public static final java.lang.String _EqualTo = "EqualTo";
     public static final java.lang.String _NotEqualTo = "NotEqualTo";
     public static final java.lang.String _Exists = "Exists";
+    public static final java.lang.String _DoesNotExist = "DoesNotExist";
+    public static final java.lang.String _In = "In";
+    public static final java.lang.String _NotIn = "NotIn";
     public static final Comparator LessThan = new Comparator(_LessThan);
     public static final Comparator LessThanOrEqualTo = new Comparator(_LessThanOrEqualTo);
     public static final Comparator GreaterThan = new Comparator(_GreaterThan);
@@ -31,6 +34,9 @@ public class Comparator implements java.io.Serializable {
     public static final Comparator EqualTo = new Comparator(_EqualTo);
     public static final Comparator NotEqualTo = new Comparator(_NotEqualTo);
     public static final Comparator Exists = new Comparator(_Exists);
+    public static final Comparator DoesNotExist = new Comparator(_DoesNotExist);
+    public static final Comparator In = new Comparator(_In);
+    public static final Comparator NotIn = new Comparator(_NotIn);
     public java.lang.String getValue() { return _value_;}
     public static Comparator fromValue(java.lang.String value)
           throws java.lang.IllegalArgumentException {
